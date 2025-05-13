@@ -531,7 +531,7 @@ p {
 
 
 .footer-logo {
-    
+
     height: 180px;
     font-size: 18px;
     background-color: #2E2F42;
@@ -714,15 +714,15 @@ link:focus {
 
 
 .container {
-    
+
     width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-    
+
 }
 
 /*Subscribe bölümü ve tasarımı*/
-.footer-input-content{
+.footer-input-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -731,11 +731,11 @@ link:focus {
     margin-left: 350px;
     margin-top: -125px;
     margin-right: -130px;
-        padding:0;
+    padding: 0;
 
 }
 
-.footer-input-text{
+.footer-input-text {
     margin-left: 80px;
     font-weight: 500;
     font-size: 16px;
@@ -743,41 +743,42 @@ link:focus {
     letter-spacing: 0.02em;
     color: #fff;
     margin-right: 260px;
-    
-    
+
+
 }
 
 
-.footer-input-form{
+.footer-input-form {
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     margin-top: 8px;
-    color:#fff;
-    
+    color: #fff;
+
 }
 
 
-.footer-input-btn{
+.footer-input-btn {
     border-radius: 4px;
     padding: 8px 24px;
     width: 165px;
     align-items: center;
     margin-left: 290px;
-    margin-top:10px;
-    display: flex;/* flex özelliği vermeden önce form kısmından dolayı - değer veremedim çünkü max yakınlık 0 olur.*/
+    margin-top: 10px;
+    display: flex;
+    /* flex özelliği vermeden önce form kısmından dolayı - değer veremedim çünkü max yakınlık 0 olur.*/
     margin-top: -41px;
     gap: 16px;
-    
-    
-    
-    
-            
+
+
+
+
+
 }
 
-.footer-input{
+.footer-input {
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
@@ -790,51 +791,58 @@ link:focus {
     letter-spacing: 0.04em;
     padding-left: 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color:#fff;
+    color: #fff;
 }
 
 
 /*Modal Bölümü*/
 
-.modal-window-content{
-    
-    position:fixed;/*scrool yapıldığında pozisyon sabit kalır.left-top değerine göre görüntü alanına sabitlenir.*/
+.modal-window-content {
+  /*display: none;*/
+    position: fixed;
+    /*scrool yapıldığında pozisyon sabit kalır.left-top değerine göre görüntü alanına sabitlenir.*/
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);/*yarı saydam koyu renk sağlar*/
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 999;/*anasayfanın üzerinde olmasını sağlar.*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /*yarı saydam koyu renk sağlar*/
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+    /*anasayfanın üzerinde olmasını sağlar.*/
 
 
 }
 
-.modal-container{
-    
-    position:absolute;
+/* .modal-window-content.is-open{
+    display: flex;
+} */
+
+.modal-container {
+
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 408px;
     height: 584px;
-    background-color:#FCFCFC;
+    background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding:72px 24px 24px 24px;
-    
+    padding: 72px 24px 24px 24px;
+
 }
 
 
-.modal-container-text{
+.modal-container-text {
     margin-bottom: 16px;
 }
 
-.modal-exit-btn{
-    position:absolute;
+.modal-exit-btn {
+    position: absolute;
     top: 24px;
     right: 24px;
     width: 24px;
@@ -844,7 +852,7 @@ link:focus {
     align-items: center;
     border-radius: 50%;
     background-color: var(--cornflower);
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -852,32 +860,33 @@ link:focus {
 
 
 
-.icon-exit{
+.icon-exit {
     width: 8px;
     height: 8px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: -9px;
-    
+
 }
 
 
 .modal-exit-btn:hover,
 .modal-exit-btn:focus {
-    fill:#404BBF;
+    fill: #404BBF;
 }
 
 
-.icon-exit{
-    fill:var(--nav-blue);
-    transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+.icon-exit {
+    fill: var(--nav-blue);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
 }
 
 .modal-exit-btn:hover .icon-exit,
-.modal-exit-btn:focus .icon-exit{
-    fill:#fff;
+.modal-exit-btn:focus .icon-exit {
+    fill: #fff;
 }
 
-.modal-container-text{
+.modal-container-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -887,11 +896,11 @@ link:focus {
 }
 
 
-.modal-form-content{
+.modal-form-content {
     margin-bottom: 8px;
 }
 
-.form-label{
+.form-label {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
@@ -899,34 +908,34 @@ link:focus {
     color: #8e8f99;
     display: block;
     margin-bottom: 4px;
-    
+
 }
 
-.modal-input-content{
+.modal-input-content {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.modal-input{
+.modal-input {
     border: 1px solid #4d5ae5;
     border-radius: 4px;
     width: 360px;
     height: 40px;
     padding-left: 38px;
     background-color: transparent;
-    outline:transparent ;
+    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
-.modal-input:focus{
+.modal-input:focus {
     border-color: #4D5AE5;
 }
 
 
-.modal-icon{
-    position:absolute;
+.modal-icon {
+    position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
@@ -934,20 +943,25 @@ link:focus {
     fill: #2E2F42;
 }
 
-.icon-click{
-    visibility: hidden;
+.icon-click {
+   
+    width:10px;
+    height: 8px;
+    margin-top:186px;
+    margin-left:11px;
+    
 }
 
-.modal-input:hover+ .modal-icon,
-.modal-input:focus + .modal-icon{
-    fill:#4D5AE5;
+.modal-input:hover+.modal-icon,
+.modal-input:focus+.modal-icon {
+    fill: #4D5AE5;
 }
 
-.textarea-content{
-    margin-bottom: 16px;
+.textarea-content {
+    margin-bottom:4px;
 }
 
-.textarea-input{
+.textarea-input {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
@@ -955,58 +969,60 @@ link:focus {
     color: rgba(46, 47, 66, 0.4);
     width: 100%;
     height: 120px;
-    resize:none;
+    resize: none;
     padding: 8px 16px;
 }
 
-.checkbox-content{
+.checkbox-content {
     margin-bottom: 24px;
-    
+
 }
 
-.modal-checkbox{
+.modal-checkbox {
     display: inline-flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    fill:transparent;
+    fill: transparent;
+    margin-top: 16px;
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
 }
 
-.visually-hidden-checkbox{
-    display:block;
+
+.visually-hidden-checkbox {
+    display: block;
     justify-content: flex-start;
     align-items: center;
     margin-bottom: -14px;
     width: 16px;
     height: 16px;
     visibility: hidden;
-    
+
 }
 
-.visually-hidden-checkbox:checked +.checkbox-label .modal-checkbox{
+.visually-hidden-checkbox:checked+.checkbox-label .modal-checkbox {
     border: none;
     background-color: #404BBF;
-    fill:#F4F4FD;
+    fill: #F4F4FD;
 }
 
-.checkbox-text{
-    color:#4D5AE5;
+.checkbox-text {
+    color: #4D5AE5;
     text-decoration: underline;
 }
 
-.form-btn{
+.form-btn {
     display: block;
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background:#4d5ae5;
+    background: #4d5ae5;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
@@ -1017,7 +1033,8 @@ link:focus {
     border: none;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top:24px;
-    margin-left:96px;
+    margin-top: 24px;
+    margin-left: 96px;
     
+
 }
