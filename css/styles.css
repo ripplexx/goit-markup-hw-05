@@ -798,7 +798,7 @@ link:focus {
 /*Modal Bölümü*/
 
 .modal-window-content {
-    display:block;
+    display:none;/*başlangıçta görünmeyecek*/
     position: fixed;
     /*scrool yapıldığında pozisyon sabit kalır.left-top değerine göre görüntü alanına sabitlenir.*/
     top: 0;
@@ -815,7 +815,7 @@ link:focus {
 }
 
  .modal-window-content.is-open{
-    display: flex;
+    display: flex; 
     
  }
 
